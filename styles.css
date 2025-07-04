@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212121;
+    font-family: ui-sans-serif, -apple-system, system-ui, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+
+.center {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    background-color: #ffffff;
+
+    color: #000000;
+    border: none;
+    font-size: 24px;
+    padding: 0.5em 1em;
+    border-radius: 2.5rem;
+    box-shadow: 0 0 1em #000000;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    gap: 1rem;
+    align-items: center;
+    font-size: 18px;
+}
+
+#start {
+    display: none;
+}
+
+@media all and (display-mode: standalone) {
+    #start {
+        display: flex;
+    }
+
+    #install {
+        display: none;
+    }
+}
